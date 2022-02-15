@@ -1,5 +1,7 @@
 # Pages Marketing
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d7dc32ef-d8b1-4af8-bca4-a9381ac1727f/deploy-status)](https://app.netlify.com/sites/gemy-pages-marketing/deploys)
+
 ## L'architecture
 
 Le projet `pages-marketing` est hébergé sur un repository [Github](https://github.com/gemy-athena/pages-marketing).
