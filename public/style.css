@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
+:root{
+    --violet: #B51E41;
+    --beige: #B4A298;
+}
+
+body {
+    margin: 0; 
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.link { color: #B4A298; } /* CSS link color (beige) */
+.link:hover { color: #B51E41; } /* CSS link hover (bordeau) */
+.link { text-decoration:none;}
+.link2 { color: var(--violet)}
+.link2:hover { color: var(beige) }
+.link2 { text-decoration:none;}
+
+header {
+    background: linear-gradient(#13181d,#20212e,#20212f);
+}
+
+header nav {
+    padding: 30px 5% 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav h1 {
+    margin:0;
+    text-transform: uppercase;
+    color: var(--beige);
+}
+header nav .right {
+    display: flex;
+    align-items: center; 
+}
+header nav .right p {
+    margin: 0 15px 0 0;
+    color:#ccc; 
+}
+
+header nav .right p:hover{
+    color: white;  
+    cursor: pointer; 
+}
+header nav .right button {
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: inherit;
+    border: 1px solid var(--violet);
+    color: var(--violet);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+}
+header nav .right button:hover {
+    color: inherit;
+    background-color: var(--violet);
+}
+
+.presentation {
+    padding: 30px 5%;
+    margin-top: 5%;
+    display: flex; align-items: center;
+    justify-content: space-between;
+}
+.presentation .product-presentation {
+    width: 100%; 
+    flex-shrink: 2,5;
+}
+.presentation .product-presentation h1 {
+    margin: 0;
+    font-size: 3vw;
+    width:60%;
+}
+.presentation .product-presentation p {
+    font-weight: 300;
+    color: #e9e9e9;
+}
+.presentation .product-presentation button {
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.presentation .image-presentation img {
+    width: 80%;
+    float: right;
+ }
+
+.first .product-presentation button {
+    background-color: var(--violet);
+    border: 1px solid var(--violet);
+    color: white;
+    transition: background-color 0.5s, color 0.5s;
+}
+.first .product-presentation button:hover {
+    background-color: inherit;
+    color: var(--violet);
+}
+
+.first .product-presentation .small-images {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.first .product-presentation .small-images .small {
+    padding: 20px;
+    background-color: #33314d;
+    margin: 0 15px 15px 0;
+    border-radius: 20px;
+    transition:  filter 0.5s;
+}
+.first .product-presentation .small-images .small:hover {
+    filter: brightness(50%);
+}
+
+.first .product-presentation .small-images .small img {
+    width: 120px;
+}
+
+.second {
+    margin: 0;
+    background-color: #13181d;
+}
+
+.second .product-presentation .new {
+    color: var(--violet);
+}
+
+.second .product-presentation button {
+    background-color: inherit;
+    color: var(--violet);
+    transition: background-color 0.5s, color 0.5s;
+    border: 1px solid var(--violet);  
+}
+
+.second .product-presentation button:hover {
+    background-color: var(--violet);
+    color: white;
+}
+
+.content {
+   margin: 0;
+   background-color: #13181d;
+   text-align: center;
+}
+
+.presentation .content {
+    width: 100%; 
+    flex-shrink: 3;
+}
+
+.content button {
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: inherit;
+    border: 1px solid var(--violet);
+    color: var(--violet);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+    text-decoration: none;
+    }
+
+.content button:hover {
+    color: inherit;
+    background-color: var(--violet);
+}
+
+.presentation .form {
+    width: 100%; 
+    flex-shrink: 3;
+}
+
+.formulaire {
+    margin: 0;
+    padding: 30px;
+    background: linear-gradient(#13181d,#20212e,#20212f);
+    display: block;
+    text-align: center;
+}
+
+.form .formulaire .corps-formulaire {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        border-radius: 10px;
+    }
+
+.form .formulaire .corps-formulaire .center .groupe .label {
+    margin: 15px;
+}
+
+.formulaire fieldset { /* pourcode PHP basé sur fieldset retire les bordures */
+    border: none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.form .formulaire .corps-formulaire .groupe {
+        position: relative; /* Pour mettre positionner l’élément dans le flux normal de la page */
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+
+.formulaire .corps-formulaire .center .groupe input {
+        margin-top: 5px;
+        margin-left: 30px;
+        padding: 0px 5px 5px 10px;
+        border: 1px solid #c9c9c9;
+        outline-color: #747cdf;
+        border-radius: 5px;
+      }
+
+.formulaire button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: inherit;
+    border: 1px solid var(--violet);
+    color: var(--violet);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+}
+.formulaire button:hover {
+    background-color: var(--violet);
+    text-decoration: white;
+}
+
+footer {
+    margin: 0;
+    background-color: #13181d;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+footer h3 {
+    color: var(--violet);
+}
+
+footer p:hover {
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width: 640px) {
+	nav .right p {
+		display: none;
+	}
+
+	.presentation .product-presentation h1 {
+		font-size: 2em;
+	}
+	.presentation .image-presentation {
+		display: none;
+	}
+	.first .product-presentation .small-images .small img {
+		width: 90px;
+	}
+
+	footer {
+		justify-content: flex-start;
+	}
+	footer .column {
+		width: 80%;
+	}
+}
